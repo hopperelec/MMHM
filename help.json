@@ -1,0 +1,118 @@
+{
+    "General":{
+        "prefixes":["?"],
+        "description":"Miscelaneous commands for use in the #general-commands channel",
+        "commands":{
+            "ping":{
+                "command":"?ping",
+                "aliases":[],
+                "description":"Returns the ping (in ms) to the bot",
+                "arguments":[]
+            },
+            "yt":{
+                "command":"?yt",
+                "aliases":["?youtube"],
+                "description":"Returns the ping (in ms) to the bot",
+                "arguments":[]
+            },
+            "discord":{
+                "command":"?discord",
+                "aliases":[],
+                "description":"Returns the ping (in ms) to the bot",
+                "arguments":[]
+            },
+            "fb":{
+                "command":"?fb",
+                "aliases":["?facebook"],
+                "description":"Returns the ping (in ms) to the bot",
+                "arguments":[]
+            },
+            "twitter":{
+                "command":"?twitter",
+                "aliases":[],
+                "description":"Returns the ping (in ms) to the bot",
+                "arguments":[]
+            },
+            "merch":{
+                "command":"?merch",
+                "aliases":["?merchandise","?tshirt"],
+                "description":"Returns the ping (in ms) to the bot",
+                "arguments":[]
+            }
+        }
+    },
+    "Eco":{
+        "prefixes":["$","£"],
+        "description":"Commands for generating the big bucks in #economy",
+        "commands":{
+            "bal":{
+                "command":"$bal [user]",
+                "aliases":["$balance","bank","cash","bankbal","bankbalance"],
+                "description":"Returns the bank anc cash balance of the user",
+                "arguments":[
+                    "User, defaulting to yourself, can be changed to a ping/ID/name/short/nick and is the user who's balance you wish to see"
+                ]
+            },
+            "lb":{
+                "command":"$lb [params]",
+                "aliases":["leaderboard"],
+                "description":"Returns a list of members in the economy from highest to smallest in type",
+                "arguments":[
+                    "Params, defaukting to total balance, can be changed to '-c', '-cash', 'c' or 'cash' to sort by cash balance only"
+                ]
+            },
+            "dep":{
+                "command":"$dep (amount)",
+                "aliases":["deposit"],
+                "description":"Takes amount from your cash balance and adds it to your bank balance",
+                "arguments":[
+                    "Amount, which can be all or an integer, is the amount to deposit from your cash balance"
+                ]
+            },
+            "with":{
+                "command":"$with (amount)",
+                "aliases":["withdraw"],
+                "description":"Takes amount from your bank balance and adds it to your cash balance. Note there is a 5% interest fee!",
+                "arguments":[
+                    "Amount, which can be all or an integer, is the amount to withdraw from your bank balance"
+                ]
+            },
+            "bet":{
+                "command":"$bet (amount)",
+                "aliases":["gamble","roll"],
+                "description":"Gives a ~50% chance of losing or gaining amount in your cash balance!",
+                "arguments":[
+                    "Amount, which must be an integer, is the amount you're willing to gamble!"
+                ]
+            },
+            "rob":{
+                "command":"$rob [amount] [user]",
+                "aliases":["steal"],
+                "description":"Attempts to steal amount from user's cash balance",
+                "arguments":[
+                    "Amount, which must be an integer and is the amount you wish to steal. The higher this is, the lower the success rate!",
+                    "User, defaulting to random, can be changed to a ping/ID/name/short/nick and is the user who's cash you wish to rob. The larger this is, the higher the success rate!"
+                ]
+            },
+            "pay":{
+                "command":"$pay (amount) (member)",
+                "aliases":["give","donate"],
+                "description":"Gives user amount of your cash balance. How sweet :D",
+                "arguments":[
+                    "Amount, which must be an integer,  is the amount you wish to donate.",
+                    "User, which must be a ping/ID/name/short/nick, is the user who's cash you wish to donate to."
+                ]
+            }
+        }
+    },
+    "Fun":{
+        "prefixes":["!"],
+        "description":"Random commands that Hopper decided to code for absolutely no reason",
+        "commands":{}
+    },
+    "Troll":{
+        "prefixes":["/"],
+        "description":"Commands to spend your money from the economy during the streams",
+        "commands":{}
+    }
+}
